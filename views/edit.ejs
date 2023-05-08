@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>編輯資料</title>
+    </head>
+    <body>
+        <h1>編輯資料</h1>
+        <form action="/edit" method="post">
+            <label>姓名：</label>
+            <input type="text" name="name" value="<%= user.name %>"><br><br>
+            <label>電子郵件：</label>
+            <input type="email" name="email" value="<%= user.local.email %>"><br><br>
+            <label>手機：</label>
+            <input type="text" name="phone" value="<%= user.phone %>"><br><br>
+            <input type="submit" value="更新資料">
+        </form>
+    </body>
+</html>

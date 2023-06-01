@@ -15,11 +15,6 @@ const connection = mysql.createConnection({
     database: 'carparking'
 });
 
-// app.set('view engine', 'ejs');
-// app.get('/login', function (req, res) {
-//     res.render('login');
-// });
-
 app.get('/login', function (req, res) {
     res.sendFile(__dirname + '/public/login.html');
 });
